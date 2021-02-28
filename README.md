@@ -16,4 +16,8 @@ Mnimum settings for starting Laravel/Breeze on docker.
 3. Open console.
 4. Type "docker-compose build --no-cache"
 5. Type "docker-compose up -d"
-6. Play as you like. 
+6. Create laravel project.
+      ```command:title
+      docker-compose run app composer create-project laravel/laravel breeze-sample
+      ```
+   
