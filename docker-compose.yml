@@ -6,6 +6,7 @@ services:
       - ./html:/var/www/html
     depends_on: 
       - db
+    # working_dir: /var/www/html/breeze-sample
   web:
     image: nginx
     ports: 
@@ -17,7 +18,14 @@ services:
       - app
   db:
     image: mysql
-    environment: 
+    environment:
+      MYSQL_DATABASE: laravel_breeze_db
+      MYSQL_USER: laravel_breeze_user
+      MYSQL_PASSWORD: laravel_breeze_password
       MYSQL_ROOT_PASSWORD: password
+    ports: 
+      - 3306:3306
+    volumes: 
+      - db_data:/var/lib/mysql
 volumes:
   db_data:
