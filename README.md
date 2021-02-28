@@ -1,5 +1,5 @@
-# laravel-ui-ready
-Mnimum settings for Laravel Breeze on docker.
+# laravel-ui-ready (Laravel/Breeze)
+Mnimum settings for starting Laravel/Breeze on docker.
 + 3 services
    + app
       + PHP-FPM    
@@ -16,4 +16,4 @@ Mnimum settings for Laravel Breeze on docker.
 3. Open console.
 4. Type "docker-compose build --no-cache"
 5. Type "docker-compose up -d"
-6. Play as you like. e.g. Into app service and composer new sample-app, composer require laravel/breeze --dev
+6. Play as you like. 
