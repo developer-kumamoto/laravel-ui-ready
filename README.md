@@ -45,6 +45,14 @@ Mnimum settings for starting Laravel/Breeze on docker.
    docker-compose up -d
    ```
 10. Change laravel .env file depend on 'db' service settings.
+    ```.env:title
+    DB_CONNECTION=mysql
+    DB_HOST=db
+    DB_PORT=3306
+    DB_DATABASE=laravel_breeze_db
+    DB_USERNAME=laravel_breeze_user
+    DB_PASSWORD=laravel_breeze_password
+    ```
 11. Migrate db.
     ```command:title
     docker-compose exec app php artisan migrate
