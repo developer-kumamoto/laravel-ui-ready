@@ -6,7 +6,7 @@ services:
       - ./html:/var/www/html
     depends_on: 
       - db
-    # working_dir: /var/www/html/breeze-sample
+    working_dir: /var/www/html/breeze-sample
   web:
     image: nginx
     ports: 
