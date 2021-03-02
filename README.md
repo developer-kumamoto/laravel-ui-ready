@@ -42,7 +42,7 @@ Mnimum settings for starting Laravel/Breeze on docker.
    ```
 9. Change 'app' work_dir from '/var/www/html' to '/var/www/html/breeze-sample'.
    ```docker-compose.yml:title
-     app:
+   app:
       build: ./infra/php
       volumes: 
          - ./html:/var/www/html
