@@ -28,3 +28,8 @@ mix.js('resources/js/app.js', 'public/js/laravel.js')
     require('tailwindcss'),
     require('autoprefixer'),
 ]);
+
+mix.browserSync({
+    proxy: "web",
+    open: false
+});

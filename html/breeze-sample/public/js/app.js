@@ -10,6 +10,22 @@
 
 
 
+var __assign = this && this.__assign || function () {
+  __assign = Object.assign || function (t) {
+    for (var s, i = 1, n = arguments.length; i < n; i++) {
+      s = arguments[i];
+
+      for (var p in s) {
+        if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
+      }
+    }
+
+    return t;
+  };
+
+  return __assign.apply(this, arguments);
+};
+
 var __importDefault = this && this.__importDefault || function (mod) {
   return mod && mod.__esModule ? mod : {
     "default": mod
@@ -25,9 +41,33 @@ var jsx_runtime_1 = __webpack_require__(/*! react/jsx-runtime */ "./node_modules
 var react_dom_1 = __importDefault(__webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js"));
 
 var App = function App() {
-  return jsx_runtime_1.jsx("div", {
-    children: "Hello World"
-  }, void 0);
+  return jsx_runtime_1.jsx("div", __assign({
+    className: "relative inline-block text-left"
+  }, {
+    children: jsx_runtime_1.jsx("div", {
+      children: jsx_runtime_1.jsxs("button", __assign({
+        type: "button",
+        className: "inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500",
+        id: "options-menu",
+        "aria-haspopup": "true",
+        "aria-expanded": "true"
+      }, {
+        children: ["Options", jsx_runtime_1.jsx("svg", __assign({
+          className: "-mr-1 ml-2 h-5 w-5",
+          xmlns: "http://www.w3.org/2000/svg",
+          viewBox: "0 0 20 20",
+          fill: "currentColor",
+          "aria-hidden": "true"
+        }, {
+          children: jsx_runtime_1.jsx("path", {
+            "fill-rule": "evenodd",
+            d: "M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z",
+            "clip-rule": "evenodd"
+          }, void 0)
+        }), void 0)]
+      }), void 0)
+    }, void 0)
+  }), void 0);
 };
 
 if (document.getElementById('app')) {
