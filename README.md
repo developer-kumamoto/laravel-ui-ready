@@ -65,6 +65,7 @@ Mnimum settings for starting Laravel/Breeze on docker.
     ```
 11. Migrate db.
     ```command:title
+    docker-compose exec app php artisan cache:clear
     docker-compose exec app php artisan migrate
     ```
 12. Install laravel/breeze
