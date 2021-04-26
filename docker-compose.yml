@@ -19,9 +19,9 @@ services:
   db:
     image: mysql
     environment:
-      MYSQL_DATABASE: laravel_breeze_db
-      MYSQL_USER: laravel_breeze_user
-      MYSQL_PASSWORD: laravel_breeze_password
+      MYSQL_DATABASE: backend_db
+      MYSQL_USER: backend_user
+      MYSQL_PASSWORD: backend_password
       MYSQL_ROOT_PASSWORD: password
     ports: 
       - 3306:3306
